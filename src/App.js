@@ -3,23 +3,24 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HeroSection from "./Components/HeroSection";
-import MostPopularCourses from "./Components/MostPopularCourses";
-import SuccessStories from "./Components/SuccessStories";
-import OurTrainers from "./Components/OurTrainers";
-import Footer from "./Components/Footer";
+import ContactUs from "./Components/ContactUs";
+import AboutUs from "./Components/About";
+import AllCourses from "./Components/AllCourses";
+import Register from "./Components/Register";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Navbar />
-        <HeroSection />
-        <MostPopularCourses />
-        <SuccessStories />
-        <OurTrainers />
-        <Footer/>
+        <Routes>
+          <Route path="/" element={<HeroSection />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/all-courses" element={<AllCourses />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );

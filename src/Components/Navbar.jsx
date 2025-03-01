@@ -156,7 +156,7 @@ function Navbar() {
               whileHover="hover"
               className="nav-item"
             >
-              <NavLink to="/courses" className="nav-link">
+              <NavLink to="/all-courses" className="nav-link">
                 الكورسات
               </NavLink>
             </NavItem>

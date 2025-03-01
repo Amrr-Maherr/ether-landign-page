@@ -7,7 +7,11 @@ import styled from "styled-components";
 import One from "../Assets/pexels-anastasiya-gepp-654466-1462630.jpg";
 import Two from "../Assets/pexels-pixabay-159844.jpg";
 import Three from "../Assets/pexels-pixabay-247899.jpg";
-
+import MostPopularCourses from "./MostPopularCourses";
+import SuccessStories from "./SuccessStories";
+import Navbar from "./Navbar";
+import OurTrainers from "./OurTrainers";
+import Footer from "./Footer";
 const HeroSectionContainer = styled.div`
   position: relative;
   height: auto;
@@ -154,20 +158,27 @@ function HeroSection() {
   ];
 
   return (
-    <HeroSectionContainer>
-      <Slider {...settings}>
-        {slides.map((slide, index) => (
-          <Slide key={index}>
-            <SlideImage src={slide.image} alt={slide.title} />
-            <SlideContent>
-              <SlideTitle>{slide.title}</SlideTitle>
-              <SlideDescription>{slide.description}</SlideDescription>
-              <CustomButton>استكشف الكورسات</CustomButton>
-            </SlideContent>
-          </Slide>
-        ))}
-      </Slider>
-    </HeroSectionContainer>
+      <>
+          <Navbar/>
+      <HeroSectionContainer>
+        <Slider {...settings}>
+          {slides.map((slide, index) => (
+            <Slide key={index}>
+              <SlideImage src={slide.image} alt={slide.title} />
+              <SlideContent>
+                <SlideTitle>{slide.title}</SlideTitle>
+                <SlideDescription>{slide.description}</SlideDescription>
+                <CustomButton>استكشف الكورسات</CustomButton>
+              </SlideContent>
+            </Slide>
+          ))}
+        </Slider>
+      </HeroSectionContainer>
+      <MostPopularCourses/>
+          <SuccessStories />
+          <OurTrainers />
+          <Footer/>
+    </>
   );
 }
 
