@@ -1,0 +1,61 @@
+/* Navbar.css */
+.custom-navbar {
+    background-color: #fff;
+    /* خلفية بيضاء */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* ظل خفيف */
+    padding: 15px 0;
+}
+
+.logo {
+    height: 40px;
+    /* ارتفاع اللوجو */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #5d4037;
+    /* لون بني داكن من اللوجو */
+}
+
+.navbar-brand:hover {
+    color: #009688;
+    /* لون أزرق مخضر من اللوجو */
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: #555;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #009688;
+    /* لون أزرق مخضر من اللوجو */
+}
+
+.custom-button {
+    background-color: #009688;
+    /* لون أزرق مخضر من اللوجو */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #5d4037;
+    /* لون بني داكن من اللوجو */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
