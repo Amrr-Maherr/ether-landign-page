@@ -1,4 +1,3 @@
-// ContactUs.js
 import React, { useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
@@ -43,11 +42,17 @@ const FormControl = styled.input`
   border: 1px solid #ddd;
   border-radius: 5px;
   transition: border-color 0.3s ease;
+  text-align: right; /* إضافة هذه الخاصية */
 
   &:focus {
     outline: none;
     border-color: #009688; /* لون أزرق مخضر من اللوجو */
   }
+`;
+
+const PhoneNumberInput = styled(FormControl)`
+  direction: ltr; /* فرض اتجاه النص من اليسار إلى اليمين */
+  text-align: right; /* محاذاة النص إلى اليمين */
 `;
 
 const FormTextarea = styled.textarea`
@@ -57,6 +62,7 @@ const FormTextarea = styled.textarea`
   border: 1px solid #ddd;
   border-radius: 5px;
   transition: border-color 0.3s ease;
+  text-align: right; /* إضافة هذه الخاصية */
 
   &:focus {
     outline: none;
@@ -101,24 +107,35 @@ const buttonVariants = {
   },
 };
 
-function ContactUs() {
+export default function ContactUs() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState(""); // إضافة حالة لرقم الجوال
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // يمكنك هنا إضافة الكود لإرسال النموذج
-    console.log("Name:", name, "Email:", email, "Message:", message);
+    console.log(
+      "Name:",
+      name,
+      "Email:",
+      email,
+      "Phone:",
+      phone, // تضمين رقم الجوال في التسجيل
+      "Message:",
+      message
+    );
     // قم بإعادة تعيين قيم الحقول بعد الإرسال
     setName("");
     setEmail("");
+    setPhone(""); // إعادة تعيين رقم الجوال
     setMessage("");
   };
 
   return (
-      <>
-          <Navbar/>
+    <>
+      <Navbar />
       <div className="container py-4">
         <ContactUsContainer
           variants={containerVariants}
@@ -151,9 +168,23 @@ function ContactUs() {
               />
             </FormGroup>
 
+            {/* إضافة حقل رقم الجوال */}
+            <FormGroup>
+              <FormLabel htmlFor="phone">رقم الجوال</FormLabel>
+              <PhoneNumberInput
+                type="tel"
+                id="phone"
+                placeholder="أدخل رقم جوالك"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                required
+              />
+            </FormGroup>
+
             <FormGroup>
               <FormLabel htmlFor="message">الرسالة</FormLabel>
               <FormTextarea
+                type="text" // تحديد نوع الحقل
                 id="message"
                 rows={3}
                 placeholder="أدخل رسالتك"
@@ -173,10 +204,8 @@ function ContactUs() {
             </SubmitButton>
           </ContactForm>
         </ContactUsContainer>
-          </div>
-          <Footer/>
+      </div>
+      <Footer />
     </>
   );
 }
-
-export default ContactUs;

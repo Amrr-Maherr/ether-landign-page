@@ -87,7 +87,7 @@ const NavLink = styled(Link)`
 `;
 
 const RegisterButton = styled(Link)`
-  background-color: #007bff;
+  background-color: #009688;
   border: none;
   border-radius: 5px;
   padding: 8px 20px;
@@ -184,8 +184,9 @@ function Navbar() {
               className="nav-item"
             >
               <RegisterButton
+              
                 to="/register"
-                className="nav-link btn btn-primary custom-button"
+                className="nav-link btn custom-button"
               >
                 تسجيل
               </RegisterButton>

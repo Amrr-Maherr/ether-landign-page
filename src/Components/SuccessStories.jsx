@@ -1,4 +1,3 @@
-// SuccessStories.js
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
@@ -10,26 +9,41 @@ import "slick-carousel/slick/slick-theme.css";
 const StoriesContainer = styled(motion.div)`
   padding: 50px;
   text-align: right;
-  background-color: #f8f9fa; /* لون خلفية فاتحة */
+  background-color: #f8f9fa;
+  overflow: hidden; /* لمنع تجاوز المحتوى */
 `;
 
 const SectionTitle = styled(motion.h2)`
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 30px;
-  color: #5d4037; /* لون بني داكن من اللوجو */
+  margin-bottom: 40px; /* زيادة المسافة أسفل العنوان */
+  color: #5d4037;
+  position: relative;
+
+  /* إضافة خط سفلي أنيق */
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #009688;
+  }
 `;
 
 const StoryCard = styled(motion.div)`
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 15px; /* زيادة استدارة الزوايا */
   padding: 30px;
   text-align: center;
   transition: transform 0.3s ease;
-  margin: 0 10px; /* إضافة هوامش جانبية */
+  margin: 15px; /* إضافة هوامش من جميع الجهات */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+  background-color: #fff; /* تغيير لون الخلفية */
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px); /* زيادة تأثير الرفع عند التحويم */
   }
 
   @media (max-width: 768px) {
@@ -38,22 +52,23 @@ const StoryCard = styled(motion.div)`
 `;
 
 const StoryIcon = styled.i`
-  font-size: 4rem; /* حجم الأيقونة */
-  color: #009688; /* لون الأيقونة */
-  margin-bottom: 20px;
+  font-size: 5rem; /* زيادة حجم الأيقونة */
+  color: #009688;
+  margin-bottom: 25px; /* زيادة المسافة أسفل الأيقونة */
 `;
 
 const StoryText = styled.p`
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.2rem; /* زيادة حجم النص */
+  line-height: 1.8; /* زيادة تباعد الأسطر */
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 25px; /* زيادة المسافة أسفل النص */
 `;
 
 const StoryName = styled.h4`
-  font-size: 1.2rem;
+  font-size: 1.3rem; /* زيادة حجم الاسم */
   font-weight: bold;
-  color: #009688; /* لون أزرق مخضر من اللوجو */
+  color: #009688;
+  margin-bottom: 0; /* إزالة المسافة أسفل الاسم */
 `;
 
 const cardVariants = {

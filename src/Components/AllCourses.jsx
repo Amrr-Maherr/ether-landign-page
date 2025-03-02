@@ -2,88 +2,96 @@ import React from "react";
 import styled from "styled-components";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import { motion } from "framer-motion"; // استيراد motion
 
-const AllCoursesContainer = styled.div`
-  padding: 50px;
+const AllCoursesContainer = styled(motion.div)`
+  // استخدام motion
+  padding: 40px; /* تقليل المساحة الداخلية */
   text-align: right;
-  background-color: #fff; /* لون خلفية بيضاء */
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* ظل خفيف */
+  border-radius: 15px; /* زوايا مستديرة */
 `;
 
 const SectionTitle = styled.h2`
-  font-size: 2.5rem;
+  font-size: 2.4rem; /* تقليل حجم العنوان */
   font-weight: bold;
-  margin-bottom: 30px;
-  color: #5d4037; /* لون بني داكن من اللوجو */
-  position: relative; /* لإنشاء خط سفلي */
+  margin-bottom: 30px; /* تقليل المسافة أسفل العنوان */
+  color: #5d4037;
+  position: relative;
 
-  /* إضافة خط سفلي أنيق */
   &:after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -6px; /* تقليل موضع الخط */
     right: 0;
-    width: 50px;
-    height: 3px;
-    background-color: #009688; /* لون أزرق مخضر من اللوجو */
+    width: 40px; /* تقليل طول الخط */
+    height: 3px; /* تقليل سمك الخط */
+    background-color: #009688;
   }
 `;
 
 const CoursesGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  ); /* تقليل الحد الأدنى للعرض */
+  gap: 25px; /* تقليل المسافة بين العناصر */
 `;
 
-const CourseCard = styled.div`
+const CourseCard = styled(motion.div)`
+  // استخدام motion
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
   transition: transform 0.3s ease;
-  display: flex; /* Make it a flex container */
-  flex-direction: column; /* Stack content vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* توزيع المساحة عموديا */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+  background-color: #fff; /* لون خلفية أبيض */
+  height: 320px; /* تقليل الارتفاع الثابت */
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px); /* تقليل تأثير الرفع */
   }
 `;
 
 const CourseIconContainer = styled.div`
   width: 100%;
-  height: 200px;
+  height: 200px; /* تقليل ارتفاع الحاوية */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5rem; /* Adjust icon size as needed */
-  color: #009688; /* Icon color */
+  font-size: 5rem; /* تقليل حجم الأيقونة */
+  color: #009688;
+  background-color: #f0f0f0; /* لون خلفية أفتح */
 `;
 
 const CourseInfo = styled.div`
-  padding: 20px;
+  padding: 20px; /* تقليل المساحة الداخلية */
+  text-align: center; /* توسيط النص */
 `;
 
 const CourseTitle = styled.h3`
-  font-size: 1.3rem;
+  font-size: 1.2rem; /* تقليل حجم العنوان */
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 8px; /* تقليل المسافة أسفل العنوان */
   color: #333;
-`;
-
-const CourseDescription = styled.p`
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 20px;
 `;
 
 const CourseButton = styled.button`
   background-color: #009688;
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 1rem;
+  border-radius: 8px;
+  padding: 10px 20px; /* تقليل المساحة الداخلية للزر */
+  font-size: 1rem; /* تقليل حجم الخط */
   font-weight: bold;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: auto; /* وضع الزر في الأسفل */
 
   &:hover {
     background-color: #5d4037;
@@ -95,39 +103,31 @@ function AllCourses() {
     {
       id: 1,
       title: "التسويق الرقمي المتقدم",
-      description: "تعلم أحدث استراتيجيات التسويق الرقمي لزيادة مبيعاتك.",
       icon: "fas fa-chart-line", // أيقونة التسويق الرقمي
     },
     {
       id: 2,
       title: "تطوير الويب باستخدام React",
-      description: "تعلم كيفية بناء تطبيقات ويب حديثة باستخدام React.",
       icon: "fas fa-code", // أيقونة تطوير الويب
     },
     {
       id: 3,
       title: "إدارة المشاريع الاحترافية",
-      description: "تعلم كيفية إدارة المشاريع بفعالية لتحقيق أهدافك.",
       icon: "fas fa-tasks", // أيقونة إدارة المشاريع
     },
     {
       id: 4,
       title: "تصميم الجرافيك باستخدام Photoshop",
-      description: "تعلم أساسيات تصميم الجرافيك باستخدام برنامج Photoshop.",
       icon: "fas fa-palette", // أيقونة تصميم الجرافيك
     },
     {
       id: 5,
       title: "تحليل البيانات باستخدام Excel",
-      description:
-        "تعلم كيفية تحليل البيانات واستخلاص رؤى قيمة باستخدام Excel.",
       icon: "fas fa-table", // أيقونة تحليل البيانات
     },
     {
       id: 6,
       title: "إدارة الموارد البشرية",
-      description:
-        "تعلم كيفية إدارة الموارد البشرية بفعالية لتحقيق أهداف المؤسسة.",
       icon: "fas fa-users", // أيقونة إدارة الموارد البشرية
     },
   ];
@@ -136,17 +136,24 @@ function AllCourses() {
     <>
       <Navbar />
       <div className="container">
-        <AllCoursesContainer>
+        <AllCoursesContainer
+          initial={{ opacity: 0, y: 20 }} // إضافة حركة دخول
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <SectionTitle>جميع الكورسات</SectionTitle>
           <CoursesGrid>
             {courses.map((course) => (
-              <CourseCard key={course.id}>
+              <CourseCard
+                key={course.id}
+                whileHover={{ scale: 1.05 }} // إضافة تأثير التحويم
+                whileTap={{ scale: 0.95 }} // إضافة تأثير النقر
+              >
                 <CourseIconContainer>
                   <i className={course.icon}></i>
                 </CourseIconContainer>
                 <CourseInfo>
                   <CourseTitle>{course.title}</CourseTitle>
-                  <CourseDescription>{course.description}</CourseDescription>
                   <CourseButton>اعرف المزيد</CourseButton>
                 </CourseInfo>
               </CourseCard>

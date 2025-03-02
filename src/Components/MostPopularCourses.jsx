@@ -1,4 +1,3 @@
-// MostPopularCourses.js
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
@@ -7,14 +6,27 @@ import { motion } from "framer-motion";
 const CoursesContainer = styled(motion.div)`
   padding: 50px;
   text-align: right;
-  background-color: #fff; /* خلفية بيضاء */
+  background-color: #fff;
+  overflow: hidden; /* لمنع تجاوز المحتوى */
 `;
 
 const SectionTitle = styled(motion.h2)`
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 30px;
-  color: #5d4037; /* لون بني داكن من اللوجو */
+  margin-bottom: 40px; /* زيادة المسافة أسفل العنوان */
+  color: #5d4037;
+  position: relative;
+
+  /* إضافة خط سفلي أنيق */
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #009688;
+  }
 `;
 
 const CoursesGrid = styled.div`
@@ -26,11 +38,18 @@ const CoursesGrid = styled.div`
 
 const CourseCard = styled(motion.div)`
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 15px; /* زيادة استدارة الزوايا */
   overflow: hidden;
   text-align: center;
   width: calc(33.33% - 30px); /* ثلاثة عناصر في الصف للشاشات الكبيرة */
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* زيادة المسافة أسفل البطاقة */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+  background-color: #f9f9f9; /* تغيير لون الخلفية */
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-8px); /* زيادة تأثير الرفع عند التحويم */
+  }
 
   @media (max-width: 768px) {
     width: calc(50% - 30px); /* عنصران في الصف للشاشات المتوسطة */
@@ -42,36 +61,37 @@ const CourseCard = styled(motion.div)`
 `;
 
 const CourseIcon = styled.i`
-  font-size: 4rem; /* حجم الأيقونة */
-  color: #009688; /* لون الأيقونة */
-  margin-bottom: 20px;
+  font-size: 5rem; /* زيادة حجم الأيقونة */
+  color: #009688;
+  margin-bottom: 25px; /* زيادة المسافة أسفل الأيقونة */
   display: flex;
   justify-content: center;
 `;
 
 const CourseInfo = styled.div`
-  padding: 20px;
+  padding: 25px; /* زيادة المساحة الداخلية */
 `;
 
 const CourseTitle = styled.h3`
-  font-size: 1.3rem;
+  font-size: 1.4rem; /* زيادة حجم العنوان */
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 15px; /* زيادة المسافة أسفل العنوان */
   color: #333;
 `;
 
 const CourseDescription = styled.p`
-  font-size: 1rem;
+  font-size: 1.1rem; /* زيادة حجم الوصف */
   color: #555;
-  margin-bottom: 20px;
+  margin-bottom: 25px; /* زيادة المسافة أسفل الوصف */
+  line-height: 1.7; /* زيادة تباعد الأسطر */
 `;
 
 const CourseButton = styled.button`
   background-color: #009688;
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 1rem;
+  border-radius: 8px; /* زيادة استدارة الزوايا */
+  padding: 12px 25px; /* زيادة المساحة الداخلية للزر */
+  font-size: 1.1rem; /* زيادة حجم الخط */
   font-weight: bold;
   color: #fff;
   cursor: pointer;

@@ -10,45 +10,61 @@ import "slick-carousel/slick/slick-theme.css";
 const TrainersContainer = styled(motion.div)`
   padding: 50px;
   text-align: right;
-  background-color: #fff; /* خلفية بيضاء */
+  background-color: #fff;
+  overflow: hidden; /* لمنع تجاوز المحتوى */
 `;
 
 const SectionTitle = styled(motion.h2)`
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 30px;
-  color: #5d4037; /* لون بني داكن من اللوجو */
+  margin-bottom: 40px; /* زيادة المسافة أسفل العنوان */
+  color: #5d4037;
+  position: relative;
+
+  /* إضافة خط سفلي أنيق */
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #009688;
+  }
 `;
 
 const TrainerCard = styled(motion.div)`
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 15px; /* زيادة استدارة الزوايا */
   text-align: center;
-  margin: 0 10px; /* إضافة هوامش جانبية */
-  padding: 20px;
+  margin: 15px; /* زيادة الهوامش من جميع الجهات */
+  padding: 30px; /* زيادة المساحة الداخلية */
   transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+  background-color: #f9f9f9; /* لون خلفية أفتح */
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px); /* زيادة تأثير الرفع عند التحويم */
   }
 `;
 
 const TrainerIcon = styled.i`
-  font-size: 4rem; /* حجم الأيقونة */
-  color: #009688; /* لون الأيقونة */
-  margin-bottom: 20px;
+  font-size: 5rem; /* حجم الأيقونة */
+  color: #009688;
+  margin-bottom: 25px; /* زيادة المسافة أسفل الأيقونة */
 `;
 
 const TrainerName = styled.h3`
-  font-size: 1.2rem;
+  font-size: 1.3rem; /* زيادة حجم اسم المدرب */
   font-weight: bold;
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 15px; /* زيادة المسافة أسفل الاسم */
 `;
 
 const TrainerDescription = styled.p`
-  font-size: 1rem;
+  font-size: 1.1rem; /* زيادة حجم وصف المدرب */
   color: #555;
+  line-height: 1.7; /* زيادة تباعد الأسطر */
 `;
 
 const cardVariants = {
