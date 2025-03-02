@@ -129,8 +129,8 @@ function Register() {
   };
 
   return (
-    <div className="container">
-      <div className="row justify-content-center">
+    <div className="container h-100">
+      <div className="row justify-content-center align-items-center h-100" style={{height:"100dvh"}}>
         <div className="col-md-8 col-lg-6">
           <RegisterContainer
             variants={containerVariants}
