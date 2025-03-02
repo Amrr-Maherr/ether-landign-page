@@ -1,4 +1,3 @@
-// AllCourses.js
 import React from "react";
 import styled from "styled-components";
 import Footer from "./Footer";
@@ -40,16 +39,22 @@ const CourseCard = styled.div`
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease;
+  display: flex; /* Make it a flex container */
+  flex-direction: column; /* Stack content vertically */
 
   &:hover {
     transform: translateY(-5px);
   }
 `;
 
-const CourseImage = styled.img`
+const CourseIconContainer = styled.div`
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem; /* Adjust icon size as needed */
+  color: #009688; /* Icon color */
 `;
 
 const CourseInfo = styled.div`
@@ -91,52 +96,54 @@ function AllCourses() {
       id: 1,
       title: "التسويق الرقمي المتقدم",
       description: "تعلم أحدث استراتيجيات التسويق الرقمي لزيادة مبيعاتك.",
-      image: "https://via.placeholder.com/400x200",
+      icon: "fas fa-chart-line", // أيقونة التسويق الرقمي
     },
     {
       id: 2,
       title: "تطوير الويب باستخدام React",
       description: "تعلم كيفية بناء تطبيقات ويب حديثة باستخدام React.",
-      image: "https://via.placeholder.com/400x200",
+      icon: "fas fa-code", // أيقونة تطوير الويب
     },
     {
       id: 3,
       title: "إدارة المشاريع الاحترافية",
       description: "تعلم كيفية إدارة المشاريع بفعالية لتحقيق أهدافك.",
-      image: "https://via.placeholder.com/400x200",
+      icon: "fas fa-tasks", // أيقونة إدارة المشاريع
     },
     {
       id: 4,
       title: "تصميم الجرافيك باستخدام Photoshop",
       description: "تعلم أساسيات تصميم الجرافيك باستخدام برنامج Photoshop.",
-      image: "https://via.placeholder.com/400x200",
+      icon: "fas fa-palette", // أيقونة تصميم الجرافيك
     },
     {
       id: 5,
       title: "تحليل البيانات باستخدام Excel",
       description:
         "تعلم كيفية تحليل البيانات واستخلاص رؤى قيمة باستخدام Excel.",
-      image: "https://via.placeholder.com/400x200",
+      icon: "fas fa-table", // أيقونة تحليل البيانات
     },
     {
       id: 6,
       title: "إدارة الموارد البشرية",
       description:
         "تعلم كيفية إدارة الموارد البشرية بفعالية لتحقيق أهداف المؤسسة.",
-      image: "https://via.placeholder.com/400x200",
+      icon: "fas fa-users", // أيقونة إدارة الموارد البشرية
     },
   ];
 
   return (
-      <>
-          <Navbar/>
+    <>
+      <Navbar />
       <div className="container">
         <AllCoursesContainer>
           <SectionTitle>جميع الكورسات</SectionTitle>
           <CoursesGrid>
             {courses.map((course) => (
               <CourseCard key={course.id}>
-                <CourseImage src={course.image} alt={course.title} />
+                <CourseIconContainer>
+                  <i className={course.icon}></i>
+                </CourseIconContainer>
                 <CourseInfo>
                   <CourseTitle>{course.title}</CourseTitle>
                   <CourseDescription>{course.description}</CourseDescription>
@@ -146,8 +153,8 @@ function AllCourses() {
             ))}
           </CoursesGrid>
         </AllCoursesContainer>
-          </div>
-          <Footer/>
+      </div>
+      <Footer />
     </>
   );
 }

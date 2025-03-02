@@ -1,8 +1,10 @@
-// AboutUs.js
 import React from "react";
 import styled from "styled-components";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+
+// استيراد الصور مباشرة
+import perImage from "../Assets/per.jpg";
 
 const AboutUsContainer = styled.div`
   padding: 50px;
@@ -97,8 +99,7 @@ function AboutUs() {
       title: "المدير التنفيذي",
       description:
         "يمتلك أ. محمد خبرة واسعة في مجال الإدارة والتخطيط الاستراتيجي، وهو حاصل على شهادات معتمدة في القيادة والإدارة.",
-      image:
-        "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQYGBw0JCQwICAwRCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCz/wAARCAABAAEDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAAAP/xAAUEAAEAAAAAAAAAAAAAAAAAAABQ/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABUBAQEAAAAAAAAAAAAAAAAAAABf/9oADAMBAAIRAxEAPwDXAlhJ//Z",
+      image: perImage, // استخدام الصورة المستوردة
     },
     {
       id: 2,
@@ -106,8 +107,7 @@ function AboutUs() {
       title: "مديرة التسويق",
       description:
         "تتمتع أ. سارة بخبرة كبيرة في مجال التسويق الرقمي وإدارة العلامات التجارية، وهي مسؤولة عن تطوير وتنفيذ استراتيجيات التسويق في الأكاديمية.",
-      image:
-        "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQYGBw0JCQwICAwRCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCz/wAARCAABAAEDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAAAP/xAAUEAAEAAAAAAAAAAAAAAAAAAABQ/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABUBAQEAAAAAAAAAAAAAAAAAAABf/9oADAMBAAIRAxEAPwDXAlhJ//Z",
+      image: perImage, // استخدام الصورة المستوردة
     },
     {
       id: 3,
@@ -115,8 +115,7 @@ function AboutUs() {
       title: "مدير العمليات",
       description:
         "يشرف أ. خالد على جميع العمليات التشغيلية في الأكاديمية، وهو مسؤول عن ضمان جودة الخدمات المقدمة وتلبية احتياجات الطلاب.",
-      image:
-        "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQYGBw0JCQwICAwRCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCwoKCz/wAARCAABAAEDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAAAP/xAAUEAAEAAAAAAAAAAAAAAAAAAABQ/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABUBAQEAAAAAAAAAAAAAAAAAAABf/9oADAMBAAIRAxEAPwDXAlhJ//Z",
+      image: perImage, // استخدام الصورة المستوردة
     },
   ];
 
