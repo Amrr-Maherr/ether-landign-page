@@ -125,7 +125,9 @@ function MostPopularCourses() {
               variants={cardVariants}
               whileHover="hover"
             >
-              <CourseIcon className={course.icon}></CourseIcon>
+              <div className="my-4">
+                <CourseIcon className={course.icon}></CourseIcon>
+              </div>
               <CourseInfo>
                 <CourseTitle>{course.title}</CourseTitle>
                 <CourseDescription>{course.description}</CourseDescription>
