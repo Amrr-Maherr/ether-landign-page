@@ -157,14 +157,13 @@ export default function ContactUs() {
             </FormGroup>
 
             <FormGroup>
-              <FormLabel htmlFor="email">البريد الإلكتروني</FormLabel>
+              <FormLabel htmlFor="email">البريد الإلكتروني (اختياري)</FormLabel>
               <FormControl
                 type="email"
                 id="email"
                 placeholder="أدخل بريدك الإلكتروني"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                required
               />
             </FormGroup>
 

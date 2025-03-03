@@ -113,44 +113,47 @@ const cardVariants = {
 };
 
 function MostPopularCourses() {
-  const courses = [
+  const services = [
     {
       id: 1,
-      title: "التسويق الرقمي المتقدم",
-      description: "تعلم أحدث استراتيجيات التسويق الرقمي لزيادة مبيعاتك.",
-      icon: "fas fa-chart-line", // أيقونة التسويق الرقمي
+      title: "ذكاء الأعمال ودعم القرار",
+      description:
+        "توفير خدمات شاملة تهدف إلى تعزيز الكفاءة التشغيلية وزيادة الإيرادات.",
+      icon: "fas fa-lightbulb", // أيقونة ذكاء الأعمال
     },
     {
       id: 2,
-      title: "تطوير الويب باستخدام React",
-      description: "تعلم كيفية بناء تطبيقات ويب حديثة باستخدام React.",
-      icon: "fas fa-code", // أيقونة تطوير الويب
+      title: "الأثر العلمي (دولياً ومحلياً)",
+      description:
+        "خدمات لتحسين تجربة التعليم وتطوير الأنظمة التعليمية والشهادات الاحترافية.",
+      icon: "fas fa-graduation-cap", // أيقونة التعليم
     },
     {
       id: 3,
-      title: "إدارة المشاريع الاحترافية",
-      description: "تعلم كيفية إدارة المشاريع بفعالية لتحقيق أهدافك.",
-      icon: "fas fa-tasks", // أيقونة إدارة المشاريع
+      title: "الأثر الذكي",
+      description:
+        "خدمات للتسويق الرقمي والتواصل، مثل تطوير العلامة التجارية وتحسين محركات البحث.",
+      icon: "fas fa-rocket", // أيقونة الأثر الذكي
     },
   ];
 
   return (
     <div className="container">
       <CoursesContainer>
-        <SectionTitle>الكورسات الأكثر طلبًا</SectionTitle>
+        <SectionTitle>خدماتنا المتميزة</SectionTitle>
         <CoursesGrid>
-          {courses.map((course) => (
+          {services.map((service) => (
             <CourseCard
-              key={course.id}
+              key={service.id}
               variants={cardVariants}
               whileHover="hover"
             >
               <div className="my-4">
-                <CourseIcon className={course.icon}></CourseIcon>
+                <CourseIcon className={service.icon}></CourseIcon>
               </div>
               <CourseInfo>
-                <CourseTitle>{course.title}</CourseTitle>
-                <CourseDescription>{course.description}</CourseDescription>
+                <CourseTitle>{service.title}</CourseTitle>
+                <CourseDescription>{service.description}</CourseDescription>
                 <CourseButton>اعرف المزيد</CourseButton>
               </CourseInfo>
             </CourseCard>

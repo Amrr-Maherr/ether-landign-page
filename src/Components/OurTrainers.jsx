@@ -1,4 +1,3 @@
-// OurTrainers.js
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
@@ -107,26 +106,31 @@ function OurTrainers() {
     {
       id: 1,
       name: "أ. محمد عبد الله",
-      description: "مدرب خبير في مجال التسويق الرقمي بخبرة تزيد عن 10 سنوات.",
-      icon: "fas fa-chart-line", // أيقونة التسويق الرقمي
+      description: "خبير في استراتيجيات ذكاء الأعمال وتحليل البيانات.",
+      icon: "fas fa-brain", // أيقونة ذكاء الأعمال
+      expertise: "ذكاء الأعمال ودعم القرار",
     },
     {
       id: 2,
       name: "أ. سارة أحمد",
-      description: "مدربة متميزة في مجال تطوير الويب باستخدام React.",
-      icon: "fas fa-code", // أيقونة تطوير الويب
+      description:
+        "متخصصة في تطوير المناهج التعليمية الحديثة والابتكار في التدريس.",
+      icon: "fas fa-chalkboard-teacher", // أيقونة التعليم
+      expertise: "الأثر العلمي",
     },
     {
       id: 3,
       name: "أ. خالد إبراهيم",
-      description: "مدرب متخصص في إدارة المشاريع الاحترافية.",
-      icon: "fas fa-tasks", // أيقونة إدارة المشاريع
+      description: "مستشار تسويق رقمي و خبير في تحسين تجربة المستخدم.",
+      icon: "fas fa-rocket", // أيقونة التسويق الرقمي
+      expertise: "الأثر الذكي",
     },
     {
       id: 4,
       name: "أ. ليلى سعيد",
-      description: "مدربة محترفة في مجال التصميم الجرافيكي.",
-      icon: "fas fa-paint-brush", // أيقونة التصميم الجرافيكي
+      description: "خبيرة في تطوير العلامات التجارية.",
+      icon: "fas fa-award", // أيقونة العلامة التجارية
+      expertise: "الأثر الذكي",
     },
   ];
 

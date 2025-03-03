@@ -1,4 +1,3 @@
-// Navbar.js
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -86,21 +85,6 @@ const NavLink = styled(Link)`
   }
 `;
 
-const RegisterButton = styled(Link)`
-  background-color: #009688;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-
-  &:hover {
-    background-color: #0056b3;
-  }
-`;
-
 const NavbarVariants = {
   hidden: { y: -100, opacity: 0 },
   visible: {
@@ -156,15 +140,6 @@ function Navbar() {
               whileHover="hover"
               className="nav-item"
             >
-              <NavLink to="/all-courses" className="nav-link">
-                الكورسات
-              </NavLink>
-            </NavItem>
-            <NavItem
-              variants={LinkVariants}
-              whileHover="hover"
-              className="nav-item"
-            >
               <NavLink to="/about" className="nav-link">
                 من نحن
               </NavLink>
@@ -177,19 +152,6 @@ function Navbar() {
               <NavLink to="/contact" className="nav-link">
                 تواصل معنا
               </NavLink>
-            </NavItem>
-            <NavItem
-              variants={LinkVariants}
-              whileHover="hover"
-              className="nav-item"
-            >
-              <RegisterButton
-              
-                to="/register"
-                className="nav-link btn custom-button"
-              >
-                تسجيل
-              </RegisterButton>
             </NavItem>
           </NavList>
         </NavCollapseDiv>
