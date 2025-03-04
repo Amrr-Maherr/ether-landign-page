@@ -83,11 +83,11 @@ function Footer() {
       <FooterLinks>
         <FooterLink to="/">الرئيسية</FooterLink>
         <FooterLink to="/about">من نحن</FooterLink>
-        <FooterLink to="/services">الخدمات</FooterLink>{" "}
+        <FooterLink >الخدمات</FooterLink>{" "}
         {/* Changed to Services */}
         <FooterLink to="/contact">تواصل معنا</FooterLink>
-        <FooterLink to="/privacy">سياسة الخصوصية</FooterLink>
-        <FooterLink to="/terms">شروط الاستخدام</FooterLink>
+        <FooterLink >سياسة الخصوصية</FooterLink>
+        <FooterLink >شروط الاستخدام</FooterLink>
       </FooterLinks>
 
       <SocialIcons>
