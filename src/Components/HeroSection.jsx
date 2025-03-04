@@ -143,7 +143,7 @@ function HeroSection() {
     {
       image: One, // تمرير المتغير مباشرة
       title: "اكتشف عالم المعرفة",
-      description: "كورسات متخصصة لتطوير مهاراتك وتحقيق أهدافك.",
+      description: "خدمات متخصصة لتطوير مهاراتك وتحقيق أهدافك.",
     },
     {
       image: Two, // تمرير المتغير مباشرة
@@ -168,7 +168,7 @@ function HeroSection() {
               <SlideContent>
                 <SlideTitle>{slide.title}</SlideTitle>
                 <SlideDescription>{slide.description}</SlideDescription>
-                <CustomButton>استكشف الكورسات</CustomButton>
+                <CustomButton>استكشف الخدمات</CustomButton>
               </SlideContent>
             </Slide>
           ))}
@@ -176,7 +176,6 @@ function HeroSection() {
       </HeroSectionContainer>
       <MostPopularCourses/>
           <SuccessStories />
-          <OurTrainers />
           <Footer/>
     </>
   );

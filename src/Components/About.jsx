@@ -86,7 +86,7 @@ function AboutUs() {
             مستدامًا لإحداث الأثر الإيجابي في تنمية القدرات الفردية والمؤسسية.
           </Paragraph>
 
-          <SectionTitle>قيمنا الريادية</SectionTitle>
+          {/* SectionTitle>قيمنا الريادية</SectionTitle>
           <List>
             <ListItem>الابتكار</ListItem>
             <ListItem>الجودة</ListItem>
@@ -104,7 +104,7 @@ function AboutUs() {
             <ListItem>تمكين الريادة والابتكار في المؤسسات</ListItem>
             <ListItem>تعزيز الكفاءة</ListItem>
             <ListItem>المساهمة في التنمية المجتمعية</ListItem>
-          </List>
+          </List */}
         </AboutUsContainer>
       </div>
       <Footer />

@@ -131,8 +131,8 @@ function Navbar() {
               whileHover="hover"
               className="nav-item"
             >
-              <NavLink to="/" className="nav-link">
-                الرئيسية
+              <NavLink to="/contact" className="nav-link">
+                تواصل معنا
               </NavLink>
             </NavItem>
             <NavItem
@@ -149,8 +149,8 @@ function Navbar() {
               whileHover="hover"
               className="nav-item"
             >
-              <NavLink to="/contact" className="nav-link">
-                تواصل معنا
+              <NavLink to="/" className="nav-link">
+                الرئيسية
               </NavLink>
             </NavItem>
           </NavList>

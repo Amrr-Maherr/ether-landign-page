@@ -7,7 +7,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HeroSection from "./Components/HeroSection";
 import ContactUs from "./Components/ContactUs";
 import AboutUs from "./Components/About";
-import AllCourses from "./Components/AllCourses";
 import Register from "./Components/Register";
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
           <Route path="/" element={<HeroSection />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/all-courses" element={<AllCourses />} />
           <Route path="/register" element={<Register />} />
         </Routes>
       </div>

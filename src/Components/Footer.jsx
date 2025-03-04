@@ -1,4 +1,3 @@
-// Footer.js
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -84,7 +83,8 @@ function Footer() {
       <FooterLinks>
         <FooterLink to="/">الرئيسية</FooterLink>
         <FooterLink to="/about">من نحن</FooterLink>
-        <FooterLink to="/courses">الكورسات</FooterLink>
+        <FooterLink to="/services">الخدمات</FooterLink>{" "}
+        {/* Changed to Services */}
         <FooterLink to="/contact">تواصل معنا</FooterLink>
         <FooterLink to="/privacy">سياسة الخصوصية</FooterLink>
         <FooterLink to="/terms">شروط الاستخدام</FooterLink>
@@ -103,15 +103,19 @@ function Footer() {
       </SocialIcons>
 
       <Copyright>
-        البريد الإلكتروني:{" "}
+        Email:{" "}
         <a href="mailto:info@sit.edu.sa" style={{ color: "#aaa" }}>
           info@sit.edu.sa
         </a>{" "}
-        | رقم الهاتف:{" "}
-        <a href="tel:٠٥٩٨٨١٠٢٣٥" style={{ color: "#aaa" }}>
-          ٠٥٩٨٨١٠٢٣٥
+        | Phone:{" "}
+        <a href="tel:+966598810235" style={{ color: "#aaa" }}>
+          +966598810235
         </a>
-        <br />© {new Date().getFullYear()} أكاديمية أثر. جميع الحقوق محفوظة.
+        ,
+        <a href="tel:+966537172700" style={{ color: "#aaa" }}>
+          +966537172700
+        </a>
+        <br />© {new Date().getFullYear()} أثر Academy. All rights reserved.
       </Copyright>
     </FooterContainer>
   );
