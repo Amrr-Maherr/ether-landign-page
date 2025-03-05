@@ -115,7 +115,7 @@ function Footer() {
         <a href="tel:+966537172700" style={{ color: "#aaa" }}>
           +966537172700
         </a>
-        <br />© {new Date().getFullYear()} أثر Academy. All rights reserved.
+        <br />© {new Date().getFullYear()} أثر All rights reserved.
       </Copyright>
     </FooterContainer>
   );
