@@ -8,6 +8,9 @@ import HeroSection from "./Components/HeroSection";
 import ContactUs from "./Components/ContactUs";
 import AboutUs from "./Components/About";
 import Register from "./Components/Register";
+import SmartEffect from "./Components/SmartEffect";
+import ScientificImpact from "./Components/ScientificImpact";
+import BusinessIntelligence from "./Components/BusinessIntelligence";
 
 function App() {
   return (
@@ -17,6 +20,12 @@ function App() {
           <Route path="/" element={<HeroSection />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/smart-effect" element={<SmartEffect />} />
+          <Route path="/Scientific-Impact" element={<ScientificImpact />} />
+          <Route
+            path="/Business-Intelligence"
+            element={<BusinessIntelligence />}
+          />
           <Route path="/register" element={<Register />} />
         </Routes>
       </div>

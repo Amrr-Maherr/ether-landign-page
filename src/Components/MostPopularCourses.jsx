@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom"; // استيراد Link
 
 // Styled Components مع دعم className من Bootstrap
 const CoursesContainer = styled(motion.div)`
@@ -86,7 +87,8 @@ const CourseDescription = styled.p`
   line-height: 1.7; /* زيادة تباعد الأسطر */
 `;
 
-const CourseButton = styled.button`
+const CourseButton = styled(Link)`
+  /* استخدم Link بدلًا من button */
   background-color: #009688;
   border: none;
   border-radius: 8px; /* زيادة استدارة الزوايا */
@@ -96,6 +98,7 @@ const CourseButton = styled.button`
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none; /* إزالة الخط السفلي */
 
   &:hover {
     background-color: #5d4037;
@@ -120,6 +123,7 @@ function MostPopularCourses() {
       description:
         "توفير خدمات شاملة تهدف إلى تعزيز الكفاءة التشغيلية وزيادة الإيرادات",
       icon: "fas fa-lightbulb", // أيقونة ذكاء الأعمال
+      link: "/Business-Intelligence", // الرابط للصفحة الخاصة بهذه الخدمة
     },
     {
       id: 2,
@@ -127,6 +131,7 @@ function MostPopularCourses() {
       description:
         "خدمات لتحسين تجربة التعليم وتطوير الأنظمة التعليمية والشهادات الاحترافية",
       icon: "fas fa-graduation-cap", // أيقونة التعليم
+      link: "/scientific-impact", // الرابط للصفحة الخاصة بهذه الخدمة
     },
     {
       id: 3,
@@ -134,6 +139,7 @@ function MostPopularCourses() {
       description:
         "خدمات للتسويق الرقمي والتواصل، مثل تطوير العلامة التجارية وتحسين محركات البحث",
       icon: "fas fa-rocket", // أيقونة الأثر الذكي
+      link: "/smart-effect", // الرابط للصفحة الخاصة بهذه الخدمة
     },
   ];
 
@@ -154,7 +160,7 @@ function MostPopularCourses() {
               <CourseInfo>
                 <CourseTitle>{service.title}</CourseTitle>
                 <CourseDescription>{service.description}</CourseDescription>
-                <CourseButton>اعرف المزيد</CourseButton>
+                <CourseButton to={service.link}>اعرف المزيد</CourseButton>
               </CourseInfo>
             </CourseCard>
           ))}
