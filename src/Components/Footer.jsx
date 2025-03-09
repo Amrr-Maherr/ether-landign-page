@@ -11,12 +11,12 @@ const FooterContainer = styled.footer`
 `;
 
 const LogoContainer = styled.div`
-  margin-bottom: 20px; /* مساحة أسفل اللوجو */
+  margin-bottom: 20px;
 `;
 
 const LogoImage = styled.img`
-  max-width: 150px; /* تحديد أقصى عرض للوجو */
-  height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+  max-width: 150px;
+  height: auto;
 `;
 
 const FooterLinks = styled.div`
@@ -28,27 +28,26 @@ const FooterLink = styled(Link)`
   color: #ddd;
   margin: 0 15px;
   text-decoration: none;
-  transition: color 0.3s ease; /* إضافة انتقال سلس للألوان */
-  position: relative; /* لإنشاء تأثير الخط السفلي */
+  transition: color 0.3s ease;
+  position: relative;
 
   &:hover {
     color: #fff;
   }
 
-  /* إضافة خط سفلي أنيق عند التحويم */
   &:after {
     content: "";
     position: absolute;
-    bottom: -3px; /* تعديل موقع الخط السفلي */
+    bottom: -3px;
     left: 0;
-    width: 0; /* البداية بدون خط */
-    height: 2px; /* سمك الخط السفلي */
-    background-color: #009688; /* لون الخط السفلي */
-    transition: width 0.3s ease; /* إضافة انتقال سلس للعرض */
+    width: 0;
+    height: 2px;
+    background-color: #009688;
+    transition: width 0.3s ease;
   }
 
   &:hover:after {
-    width: 100%; /* عرض كامل للخط عند التحويم */
+    width: 100%;
   }
 `;
 
@@ -74,31 +73,40 @@ const Copyright = styled.p`
 function Footer() {
   return (
     <FooterContainer>
-      {/* إضافة مكان اللوجو هنا */}
       <LogoContainer>
-        {/* استخدم الصورة المستوردة هنا */}
         <LogoImage src={Logo} alt="شعار أكاديمية أثر" />
       </LogoContainer>
 
       <FooterLinks>
         <FooterLink to="/">الرئيسية</FooterLink>
         <FooterLink to="/about">من نحن</FooterLink>
-        <FooterLink >الخدمات</FooterLink>{" "}
-        {/* Changed to Services */}
+        <FooterLink>الخدمات</FooterLink>
         <FooterLink to="/contact">تواصل معنا</FooterLink>
-        <FooterLink >سياسة الخصوصية</FooterLink>
-        <FooterLink >شروط الاستخدام</FooterLink>
+        <FooterLink>سياسة الخصوصية</FooterLink>
+        <FooterLink>شروط الاستخدام</FooterLink>
       </FooterLinks>
 
       <SocialIcons>
-        <SocialIconLink href="#" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-facebook"></i>
+        <SocialIconLink
+          href="https://x.com/sit_ksa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-x-twitter"></i>
         </SocialIconLink>
-        <SocialIconLink href="#" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-twitter"></i>
-        </SocialIconLink>
-        <SocialIconLink href="#" target="_blank" rel="noopener noreferrer">
+        <SocialIconLink
+          href="https://www.instagram.com/sit_ksa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fab fa-instagram"></i>
+        </SocialIconLink>
+        <SocialIconLink
+          href="https://www.tiktok.com/@sit_ksa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-tiktok"></i>
         </SocialIconLink>
       </SocialIcons>
 
