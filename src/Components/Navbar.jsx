@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import Logo from "../Assets/2.png";
+import Logo from "../Assets/شعار.png";
 
 // Styled Components مع دعم className من Bootstrap
 const NavbarContainer = styled(motion.nav)`

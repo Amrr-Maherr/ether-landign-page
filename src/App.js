@@ -11,6 +11,9 @@ import Register from "./Components/Register";
 import SmartEffect from "./Components/SmartEffect";
 import ScientificImpact from "./Components/ScientificImpact";
 import BusinessIntelligence from "./Components/BusinessIntelligence";
+import ProfessionalCertificates from "./Components/ProfessionalCertificates";
+import HealthCertificates from "./Components/HealthCertificates";
+import HumanResources from "./Components/HumanResources";
 
 function App() {
   return (
@@ -23,9 +26,15 @@ function App() {
           <Route path="/smart-effect" element={<SmartEffect />} />
           <Route path="/Scientific-Impact" element={<ScientificImpact />} />
           <Route
+            path="Professional-Certificates"
+            element={<ProfessionalCertificates />}
+          />
+          <Route
             path="/Business-Intelligence"
             element={<BusinessIntelligence />}
           />
+          <Route path="Health-Certificates" element={<HealthCertificates />} />
+          <Route path="Human-Resources" element={<HumanResources />} />
           <Route path="/register" element={<Register />} />
         </Routes>
       </div>

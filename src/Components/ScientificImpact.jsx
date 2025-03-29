@@ -126,11 +126,11 @@ export default function ScientificImpact() {
         {/* خدمات التعليم في روسيا */}
         <PackageContainer>
           <PackageHeader>
+            <PackagePrice>7,150 SR </PackagePrice>
             <PackageTitle>
               <PackageIcon className="fas fa-graduation-cap mx-3"></PackageIcon>
               خدمات التعليم في روسيا
             </PackageTitle>
-            <PackagePrice>7,150 ريال</PackagePrice>
           </PackageHeader>
           <PackageDescription>
             دعم كامل للطلاب الراغبين في الدراسة في روسيا، يشمل توجيههم لاختيار
@@ -139,20 +139,20 @@ export default function ScientificImpact() {
           </PackageDescription>
           <PackageFeatures>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-graduation-cap mx-3"></PackageIcon>
               توجيه التخصصات
+              <PackageIcon className="fas fa-graduation-cap mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-file-alt mx-3"></PackageIcon>
               طلبات القبول
+              <PackageIcon className="fas fa-file-alt mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-passport mx-3"></PackageIcon>
               تسهيل الفيزا
+              <PackageIcon className="fas fa-passport mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-home mx-3"></PackageIcon>
               تسهيل الإقامة
+              <PackageIcon className="fas fa-home mx-3"></PackageIcon>
             </PackageFeatureItem>
           </PackageFeatures>
         </PackageContainer>
@@ -160,11 +160,11 @@ export default function ScientificImpact() {
         {/* خدمات التعليم في ماليزيا */}
         <PackageContainer>
           <PackageHeader>
+            <PackagePrice>6,500 SR </PackagePrice>
             <PackageTitle>
-              <PackageIcon className="fas fa-university mx-3"></PackageIcon>
               خدمات التعليم في ماليزيا
+              <PackageIcon className="fas fa-university mx-3"></PackageIcon>
             </PackageTitle>
-            <PackagePrice>6,500 ريال</PackagePrice>
           </PackageHeader>
           <PackageDescription>
             توجيه للطلاب الراغبين في الدراسة في ماليزيا، يشمل التقديم على
@@ -173,20 +173,20 @@ export default function ScientificImpact() {
           </PackageDescription>
           <PackageFeatures>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-university mx-3"></PackageIcon>
               التقديم على الجامعات
+              <PackageIcon className="fas fa-university mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-book mx-3"></PackageIcon>
               التخصصات المناسبة
+              <PackageIcon className="fas fa-book mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-passport mx-3"></PackageIcon>
               تأشيرات الدراسة
+              <PackageIcon className="fas fa-passport mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-handshake mx-3"></PackageIcon>
               الدعم قبل الوصول
+              <PackageIcon className="fas fa-handshake mx-3"></PackageIcon>
             </PackageFeatureItem>
           </PackageFeatures>
         </PackageContainer>
@@ -194,11 +194,11 @@ export default function ScientificImpact() {
         {/* خدمات أخصائي الحساب الآلي */}
         <PackageContainer>
           <PackageHeader>
+            <PackagePrice>2,990 SR </PackagePrice>
             <PackageTitle>
               <PackageIcon className="fas fa-calculator mx-3"></PackageIcon>
               خدمات أخصائي الحساب الآلي
             </PackageTitle>
-            <PackagePrice>2,990 ريال</PackagePrice>
           </PackageHeader>
           <PackageDescription>
             دعم في تطبيق تقنيات الحساب الآلي، تحسين الكفاءة الحسابية باستخدام
@@ -206,16 +206,16 @@ export default function ScientificImpact() {
           </PackageDescription>
           <PackageFeatures>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-code mx-3"></PackageIcon>
               تطبيق التقنيات
+              <PackageIcon className="fas fa-code mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-chart-line mx-3"></PackageIcon>
               تحسين الكفاءة
+              <PackageIcon className="fas fa-chart-line mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-robot mx-3"></PackageIcon>
               أتمتة العمليات
+              <PackageIcon className="fas fa-robot mx-3"></PackageIcon>
             </PackageFeatureItem>
           </PackageFeatures>
         </PackageContainer>
@@ -223,11 +223,11 @@ export default function ScientificImpact() {
         {/* خدمات أخصائي الموارد البشرية */}
         <PackageContainer>
           <PackageHeader>
+            <PackagePrice>4,500 SR </PackagePrice>
             <PackageTitle>
               <PackageIcon className="fas fa-users mx-3"></PackageIcon>
               خدمات أخصائي الموارد البشرية
             </PackageTitle>
-            <PackagePrice>4,500 ريال</PackagePrice>
           </PackageHeader>
           <PackageDescription>
             مساعدة في تصميم سياسات الموارد البشرية، تحسين استراتيجيات التوظيف،
@@ -235,20 +235,20 @@ export default function ScientificImpact() {
           </PackageDescription>
           <PackageFeatures>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-file-invoice mx-3"></PackageIcon>
               تصميم السياسات
+              <PackageIcon className="fas fa-file-invoice mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-search mx-3"></PackageIcon>
               تحسين التوظيف
+              <PackageIcon className="fas fa-search mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-chalkboard-teacher mx-3"></PackageIcon>
               تنظيم التدريب
+              <PackageIcon className="fas fa-chalkboard-teacher mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-chart-pie mx-3"></PackageIcon>
               تحليل الأداء
+              <PackageIcon className="fas fa-chart-pie mx-3"></PackageIcon>
             </PackageFeatureItem>
           </PackageFeatures>
         </PackageContainer>

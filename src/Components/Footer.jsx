@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import Logo from "../Assets/2.png";
+import Logo from "../Assets/شعار.png";
 
 const FooterContainer = styled.footer`
   background-color: #333;
@@ -59,6 +59,7 @@ const SocialIconLink = styled.a`
   color: #fff;
   font-size: 1.5rem;
   margin: 0 10px;
+  transition: color 0.3s ease; /* إضافة انتقال اللون */
 
   &:hover {
     color: #009688;
@@ -108,14 +109,38 @@ function Footer() {
         >
           <i className="fab fa-tiktok"></i>
         </SocialIconLink>
+        {/* إضافة أيقونات أخرى */}
+        <SocialIconLink
+          href="#" // ضع رابط الفيسبوك هنا
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-facebook"></i>
+        </SocialIconLink>
+        <SocialIconLink
+          href="#" // ضع رابط LinkedIn هنا
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-linkedin"></i>
+        </SocialIconLink>
+        <SocialIconLink
+          href="#" // ضع رابط يوتيوب هنا
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-youtube"></i>
+        </SocialIconLink>
       </SocialIcons>
 
       <Copyright>
+        <i className="far fa-envelope"></i> {/* أيقونة البريد */}
         Email:{" "}
         <a href="mailto:info@sit.edu.sa" style={{ color: "#aaa" }}>
           info@sit.edu.sa
         </a>{" "}
-        | Phone:{" "}
+        | <i className="fas fa-phone"></i> {/* أيقونة الهاتف */}
+        Phone:{" "}
         <a href="tel:+966598810235" style={{ color: "#aaa" }}>
           +966598810235
         </a>

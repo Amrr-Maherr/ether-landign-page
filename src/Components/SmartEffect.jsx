@@ -127,31 +127,31 @@ export default function SmartEffect() {
         {/* باقة الانطلاقة */}
         <PackageContainer>
           <PackageHeader>
+            <PackagePrice>5500 SR </PackagePrice>
             <PackageTitle>
               <PackageIcon className="fas fa-rocket mx-3"></PackageIcon>
               باقة الانطلاقة
             </PackageTitle>
-            <PackagePrice>5500 ريال</PackagePrice>
           </PackageHeader>
           <PackageDescription>
             انطلاقة قوية لكل مشروع جديد يريد التواجد في السوق بهوية احترافية
           </PackageDescription>
           <PackageFeatures>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-paint-brush mx-3"></PackageIcon>
               هوية بصرية
+              <PackageIcon className="fas fa-paint-brush mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-photo-video mx-3"></PackageIcon>
               صفحات السوشيال ميديا
+              <PackageIcon className="fas fa-photo-video mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-calendar-alt mx-3"></PackageIcon>
               12 تصميم سوشيال ميديا
+              <PackageIcon className="fas fa-calendar-alt mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-camera mx-3"></PackageIcon>
               تصوير منتجات
+              <PackageIcon className="fas fa-camera mx-3"></PackageIcon>
             </PackageFeatureItem>
           </PackageFeatures>
         </PackageContainer>
@@ -159,39 +159,39 @@ export default function SmartEffect() {
         {/* باقة النمو */}
         <PackageContainer>
           <PackageHeader>
+            <PackagePrice>8500 SR </PackagePrice>
             <PackageTitle>
               <PackageIcon className="fas fa-chart-line mx-3"></PackageIcon>
               باقة النمو
             </PackageTitle>
-            <PackagePrice>8500 ريال</PackagePrice>
           </PackageHeader>
           <PackageDescription>
             مثالية للعلامات التجارية التي ترغب في زيادة الوعي وتحقيق تفاعل أعلى
           </PackageDescription>
           <PackageFeatures>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-check-circle mx-3"></PackageIcon>
               كل مزايا الانطلاقة
+              <PackageIcon className="fas fa-check-circle mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-comments mx-3"></PackageIcon>
               إدارة التواصل الاجتماعي
+              <PackageIcon className="fas fa-comments mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-images mx-3"></PackageIcon>
               16 تصميم سوشيال ميديا
+              <PackageIcon className="fas fa-images mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-video mx-3"></PackageIcon>
               فيديو دعائي قصير
+              <PackageIcon className="fas fa-video mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-bullhorn mx-3"></PackageIcon>
               حملة إعلانية ممولة
+              <PackageIcon className="fas fa-bullhorn mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              <PackageIcon className="fas fa-file-alt mx-3"></PackageIcon>
               تقرير شهري
+              <PackageIcon className="fas fa-file-alt mx-3"></PackageIcon>
             </PackageFeatureItem>
           </PackageFeatures>
         </PackageContainer>

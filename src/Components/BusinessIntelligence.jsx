@@ -152,11 +152,11 @@ export default function BusinessIntelligence() {
         <SectionTitle>ذكاء الأعمال ودعم القرار</SectionTitle>
         <PackageContainer>
           <PackageHeader>
+            <PackagePrice>35000 SR</PackagePrice>
             <PackageTitle>
               <PackageIcon className="fas fa-lightbulb"></PackageIcon>
               باقة ذكاء الأعمال ودعم القرار
             </PackageTitle>
-            <PackagePrice>35000 ريال</PackagePrice>
           </PackageHeader>
           <PackageDescription>
             باقة ذكاء الاعمال ودعم القرار هي الخيار الأفضل للمنظمات التي تسعى
@@ -168,8 +168,8 @@ export default function BusinessIntelligence() {
           <PackageFeatures>
             {features.map((feature, index) => (
               <PackageFeatureItem key={index}>
-                <PackageIcon className={feature.icon}></PackageIcon>
                 {feature.text}
+                <PackageIcon className={feature.icon}></PackageIcon>
               </PackageFeatureItem>
             ))}
           </PackageFeatures>
