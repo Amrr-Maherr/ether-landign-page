@@ -123,132 +123,92 @@ export default function ScientificImpact() {
       <div className="container my-4">
         <SectionTitle>خدمات الأثر العلمي</SectionTitle>
 
-        {/* خدمات التعليم في روسيا */}
+        {/* خدمات الصحة والسلامة المهنية */}
         <PackageContainer>
           <PackageHeader>
-            <PackagePrice>7,150 SR </PackagePrice>
+            <PackagePrice>تواصل معنا</PackagePrice>
             <PackageTitle>
-              <PackageIcon className="fas fa-graduation-cap mx-3"></PackageIcon>
-              خدمات التعليم في روسيا
+              <PackageIcon className="fas fa-shield-alt mx-3"></PackageIcon>
+              خدمات الصحة والسلامة المهنية
             </PackageTitle>
           </PackageHeader>
           <PackageDescription>
-            دعم كامل للطلاب الراغبين في الدراسة في روسيا، يشمل توجيههم لاختيار
-            التخصصات، تقديم طلبات القبول، وتسهيل إجراءات الفيزا والإقامة،
-            بالإضافة إلى الدعم قبل الوصول الى الجامعة.
+            نقدم خدمات متخصصة في مجال الصحة والسلامة المهنية لضمان بيئة عمل آمنة
+            وصحية، وتشمل تقييم المخاطر، وتطوير السياسات والإجراءات، وتنفيذ برامج
+            التدريب.
           </PackageDescription>
           <PackageFeatures>
             <PackageFeatureItem>
-              توجيه التخصصات
-              <PackageIcon className="fas fa-graduation-cap mx-3"></PackageIcon>
+              تقييم المخاطر
+              <PackageIcon className="fas fa-exclamation-triangle mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              طلبات القبول
+              تطوير السياسات
               <PackageIcon className="fas fa-file-alt mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              تسهيل الفيزا
-              <PackageIcon className="fas fa-passport mx-3"></PackageIcon>
-            </PackageFeatureItem>
-            <PackageFeatureItem>
-              تسهيل الإقامة
-              <PackageIcon className="fas fa-home mx-3"></PackageIcon>
+              برامج التدريب
+              <PackageIcon className="fas fa-users mx-3"></PackageIcon>
             </PackageFeatureItem>
           </PackageFeatures>
         </PackageContainer>
 
-        {/* خدمات التعليم في ماليزيا */}
+        {/* خدمات الإدارة العامة */}
         <PackageContainer>
           <PackageHeader>
-            <PackagePrice>6,500 SR </PackagePrice>
+            <PackagePrice>تواصل معنا</PackagePrice>
             <PackageTitle>
-              خدمات التعليم في ماليزيا
-              <PackageIcon className="fas fa-university mx-3"></PackageIcon>
+              <PackageIcon className="fas fa-tasks mx-3"></PackageIcon>
+              خدمات الإدارة العامة
             </PackageTitle>
           </PackageHeader>
           <PackageDescription>
-            توجيه للطلاب الراغبين في الدراسة في ماليزيا، يشمل التقديم على
-            الجامعات والتخصصات المناسبة، مساعدتهم في الحصول على تأشيرات الدراسة،
-            بالإضافة إلى الدعم قبل الوصول الى الجامعة.
+            نقدم حلولًا شاملة في مجال الإدارة العامة، بما في ذلك التخطيط
+            الاستراتيجي، وإدارة المشاريع، وتحسين العمليات الإدارية، بهدف تحقيق
+            الكفاءة والفعالية في الأداء.
           </PackageDescription>
           <PackageFeatures>
             <PackageFeatureItem>
-              التقديم على الجامعات
-              <PackageIcon className="fas fa-university mx-3"></PackageIcon>
+              التخطيط الاستراتيجي
+              <PackageIcon className="fas fa-compass mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              التخصصات المناسبة
-              <PackageIcon className="fas fa-book mx-3"></PackageIcon>
+              إدارة المشاريع
+              <PackageIcon className="fas fa-project-diagram mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              تأشيرات الدراسة
-              <PackageIcon className="fas fa-passport mx-3"></PackageIcon>
-            </PackageFeatureItem>
-            <PackageFeatureItem>
-              الدعم قبل الوصول
-              <PackageIcon className="fas fa-handshake mx-3"></PackageIcon>
+              تحسين العمليات
+              <PackageIcon className="fas fa-cogs mx-3"></PackageIcon>
             </PackageFeatureItem>
           </PackageFeatures>
         </PackageContainer>
 
-        {/* خدمات أخصائي الحساب الآلي */}
+        {/* خدمات الموارد البشرية */}
         <PackageContainer>
           <PackageHeader>
-            <PackagePrice>2,990 SR </PackagePrice>
-            <PackageTitle>
-              <PackageIcon className="fas fa-calculator mx-3"></PackageIcon>
-              خدمات أخصائي الحساب الآلي
-            </PackageTitle>
-          </PackageHeader>
-          <PackageDescription>
-            دعم في تطبيق تقنيات الحساب الآلي، تحسين الكفاءة الحسابية باستخدام
-            البرمجيات، وأتمتة العمليات الحسابية لتحسين الإنتاجية والدقة.
-          </PackageDescription>
-          <PackageFeatures>
-            <PackageFeatureItem>
-              تطبيق التقنيات
-              <PackageIcon className="fas fa-code mx-3"></PackageIcon>
-            </PackageFeatureItem>
-            <PackageFeatureItem>
-              تحسين الكفاءة
-              <PackageIcon className="fas fa-chart-line mx-3"></PackageIcon>
-            </PackageFeatureItem>
-            <PackageFeatureItem>
-              أتمتة العمليات
-              <PackageIcon className="fas fa-robot mx-3"></PackageIcon>
-            </PackageFeatureItem>
-          </PackageFeatures>
-        </PackageContainer>
-
-        {/* خدمات أخصائي الموارد البشرية */}
-        <PackageContainer>
-          <PackageHeader>
-            <PackagePrice>4,500 SR </PackagePrice>
+            <PackagePrice>تواصل معنا</PackagePrice>
             <PackageTitle>
               <PackageIcon className="fas fa-users mx-3"></PackageIcon>
-              خدمات أخصائي الموارد البشرية
+              خدمات الموارد البشرية
             </PackageTitle>
           </PackageHeader>
           <PackageDescription>
-            مساعدة في تصميم سياسات الموارد البشرية، تحسين استراتيجيات التوظيف،
-            تنظيم التدريب، وتحليل أداء الموظفين لضمان بيئة عمل فعّالة.
+            نوفر خدمات متكاملة في مجال الموارد البشرية، تشمل التوظيف، والتدريب
+            والتطوير، وإدارة الأداء، بهدف بناء فريق عمل مؤهل ومتكامل يساهم في
+            تحقيق أهداف المنظمة.
           </PackageDescription>
           <PackageFeatures>
             <PackageFeatureItem>
-              تصميم السياسات
-              <PackageIcon className="fas fa-file-invoice mx-3"></PackageIcon>
+              التوظيف
+              <PackageIcon className="fas fa-user-plus mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              تحسين التوظيف
-              <PackageIcon className="fas fa-search mx-3"></PackageIcon>
+              التدريب والتطوير
+              <PackageIcon className="fas fa-graduation-cap mx-3"></PackageIcon>
             </PackageFeatureItem>
             <PackageFeatureItem>
-              تنظيم التدريب
-              <PackageIcon className="fas fa-chalkboard-teacher mx-3"></PackageIcon>
-            </PackageFeatureItem>
-            <PackageFeatureItem>
-              تحليل الأداء
-              <PackageIcon className="fas fa-chart-pie mx-3"></PackageIcon>
+              إدارة الأداء
+              <PackageIcon className="fas fa-chart-line mx-3"></PackageIcon>
             </PackageFeatureItem>
           </PackageFeatures>
         </PackageContainer>

@@ -13,6 +13,9 @@ import partner5 from "../Assets/WhatsApp Image 2025-03-29 at 16.08.59_ee45f6ae.j
 import partner6 from "../Assets/WhatsApp Image 2025-03-29 at 16.09.00_c0f67063.jpg";
 import partner7 from "../Assets/WhatsApp Image 2025-03-29 at 16.09.01_d8ef0fe8.jpg";
 import partner8 from "../Assets/WhatsApp Image 2025-03-29 at 16.09.02_6c0be5ef.jpg";
+import partner9 from "../Assets/WhatsApp Image 2025-03-26 at 01.00.31_7e4914b4.jpg";
+import partner10 from "../Assets/microsoft-logo-svgrepo-com.svg";
+import partner11 from "../Assets/adobe-2.svg";
 
 // Styled Components
 const SimpleSliderContainer = styled.div`
@@ -94,6 +97,9 @@ function SimpleSlider() {
     partner6,
     partner7,
     partner8,
+    partner9,
+    partner10,
+    partner11,
   ];
 
   return (

@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 const CertificatesContainer = styled.div`
   padding: 50px;
   text-align: center;
-  background-color: #f9f9f9; /* لون خلفية لطيف */
+  background-color: #f9f9f9; /* لون خلفية لطيفة */
 `;
 
 const CertificatesTitle = styled.h2`
@@ -58,6 +58,7 @@ const TrainingHours = styled.div`
   font-size: 1rem;
   color: #777;
   margin-bottom: 15px;
+  direction: rtl; /* إضافة هذا السطر */
 `;
 
 const Price = styled.div`

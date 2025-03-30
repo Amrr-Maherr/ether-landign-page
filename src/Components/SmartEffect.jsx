@@ -29,7 +29,7 @@ const SectionTitle = styled(motion.h2)`
 
 const PackageIcon = styled.i`
   color: #009688;
-  margin-left: 10px;
+  margin-right: 5px; /* تم التعديل إلى اليمين وتقليل الهامش */
   font-size: 1.2em;
 `;
 
@@ -102,6 +102,10 @@ const PackageFeatureItem = styled.li`
   width: calc(50% - 20px); /* ميزتان في الصف */
   text-align: center;
   transition: transform 0.3s ease;
+  direction: rtl; /* تحديد اتجاه النص من اليمين إلى اليسار */
+  display: flex; /* استخدام flexbox */
+  align-items: center; /* توسيط عمودي */
+  justify-content: center; /* توسيط أفقي */
 
   &:hover {
     transform: translateY(-3px);
@@ -129,7 +133,7 @@ export default function SmartEffect() {
           <PackageHeader>
             <PackagePrice>5500 SR </PackagePrice>
             <PackageTitle>
-              <PackageIcon className="fas fa-rocket mx-3"></PackageIcon>
+              <PackageIcon className="fas fa-rocket" />
               باقة الانطلاقة
             </PackageTitle>
           </PackageHeader>
@@ -139,19 +143,19 @@ export default function SmartEffect() {
           <PackageFeatures>
             <PackageFeatureItem>
               هوية بصرية
-              <PackageIcon className="fas fa-paint-brush mx-3"></PackageIcon>
+              <PackageIcon className="fas fa-paint-brush" />
             </PackageFeatureItem>
             <PackageFeatureItem>
               صفحات السوشيال ميديا
-              <PackageIcon className="fas fa-photo-video mx-3"></PackageIcon>
+              <PackageIcon className="fas fa-photo-video" />
             </PackageFeatureItem>
             <PackageFeatureItem>
               12 تصميم سوشيال ميديا
-              <PackageIcon className="fas fa-calendar-alt mx-3"></PackageIcon>
+              <PackageIcon className="fas fa-calendar-alt" />
             </PackageFeatureItem>
             <PackageFeatureItem>
               تصوير منتجات
-              <PackageIcon className="fas fa-camera mx-3"></PackageIcon>
+              <PackageIcon className="fas fa-camera" />
             </PackageFeatureItem>
           </PackageFeatures>
         </PackageContainer>
@@ -161,7 +165,7 @@ export default function SmartEffect() {
           <PackageHeader>
             <PackagePrice>8500 SR </PackagePrice>
             <PackageTitle>
-              <PackageIcon className="fas fa-chart-line mx-3"></PackageIcon>
+              <PackageIcon className="fas fa-chart-line" />
               باقة النمو
             </PackageTitle>
           </PackageHeader>
@@ -171,27 +175,27 @@ export default function SmartEffect() {
           <PackageFeatures>
             <PackageFeatureItem>
               كل مزايا الانطلاقة
-              <PackageIcon className="fas fa-check-circle mx-3"></PackageIcon>
+              <PackageIcon className="fas fa-check-circle" />
             </PackageFeatureItem>
             <PackageFeatureItem>
               إدارة التواصل الاجتماعي
-              <PackageIcon className="fas fa-comments mx-3"></PackageIcon>
+              <PackageIcon className="fas fa-comments" />
             </PackageFeatureItem>
             <PackageFeatureItem>
               16 تصميم سوشيال ميديا
-              <PackageIcon className="fas fa-images mx-3"></PackageIcon>
+              <PackageIcon className="fas fa-images" />
             </PackageFeatureItem>
             <PackageFeatureItem>
               فيديو دعائي قصير
-              <PackageIcon className="fas fa-video mx-3"></PackageIcon>
+              <PackageIcon className="fas fa-video" />
             </PackageFeatureItem>
             <PackageFeatureItem>
               حملة إعلانية ممولة
-              <PackageIcon className="fas fa-bullhorn mx-3"></PackageIcon>
+              <PackageIcon className="fas fa-bullhorn" />
             </PackageFeatureItem>
             <PackageFeatureItem>
               تقرير شهري
-              <PackageIcon className="fas fa-file-alt mx-3"></PackageIcon>
+              <PackageIcon className="fas fa-file-alt" />
             </PackageFeatureItem>
           </PackageFeatures>
         </PackageContainer>

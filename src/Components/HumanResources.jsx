@@ -58,6 +58,7 @@ const TrainingHours = styled.div`
   font-size: 1rem;
   color: #777;
   margin-bottom: 15px;
+  direction: rtl; /* إضافة هذا السطر */
 `;
 
 const PriceContainer = styled.div`
