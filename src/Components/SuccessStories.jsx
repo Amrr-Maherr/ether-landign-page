@@ -44,21 +44,30 @@ const SectionTitle = styled.h2`
   }
 `;
 
+// --- التعديل هنا ---
 const SliderImage = styled.img`
-  width: 100%;
-  height: 200px; /* ارتفاع ثابت للصور */
-  object-fit: cover;
+  width: 100%; /* اجعل الصورة تأخذ عرض الحاوية */
+  height: 200px;
+  /* object-fit: cover; - تم إزالة هذه الخاصية */
+  max-height: 250px; /* يمكنك إضافة ارتفاع أقصى اختياري لمنع الصور الطويلة جداً */
+  object-fit: contain; /* اجعل الصورة بأكملها مرئية داخل أبعادها، مع الحفاظ على النسبة */
+  display: block; /* يمنع وجود مسافات إضافية أسفل الصورة */
+  margin: 0 auto; /* لتوسيط الصورة إذا كانت أضيق من الحاوية */
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  vertical-align: middle; /* لتحسين المحاذاة العمودية داخل السلايدر */
 
   &:hover {
     transform: scale(1.05);
   }
 `;
+// --- نهاية التعديل ---
 
 const SlideContainer = styled.div`
   padding: 0 10px; /* إضافة مساحة على جانبي كل صورة */
+  /* قد تحتاج لتعديل الـ padding أو إضافة min-height هنا إذا واجهت مشاكل في المحاذاة */
+  /* مثال: min-height: 150px; align-items: center; display: flex !important; */
 `;
 
 function SimpleSlider() {
@@ -72,17 +81,19 @@ function SimpleSlider() {
     autoplaySpeed: 3000, // تحديد سرعة الانتقال (بالمللي ثانية)
     pauseOnHover: true,
     rtl: true, // تفعيل اتجاه الكتابة من اليمين إلى اليسار
+    variableWidth: false, // أبقه false إذا كنت تريد أن تكون عرض الشرائح متساوياً
+    adaptiveHeight: true, // اجعل السلايدر يتكيف مع ارتفاع الشريحة الحالية
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2, // عرض صورتين على الشاشات الصغيرة
+          slidesToShow: 2,
         },
       },
       {
         breakpoint: 576,
         settings: {
-          slidesToShow: 1, // عرض صورة واحدة على الشاشات الصغيرة جدًا
+          slidesToShow: 1,
         },
       },
     ],
