@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 // =========================================================================
 //  الأنماط العامة (التي يمكن إعادة استخدامها)
@@ -126,7 +127,12 @@ export default function ScientificImpact() {
         {/* خدمات الصحة والسلامة المهنية */}
         <PackageContainer>
           <PackageHeader>
-            <PackagePrice>تواصل معنا</PackagePrice>
+            <Link
+              to="/Health-Certificates"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <PackagePrice>اكتشف هنا</PackagePrice>
+            </Link>
             <PackageTitle>
               <PackageIcon className="fas fa-shield-alt mx-3"></PackageIcon>
               خدمات الصحة والسلامة المهنية
@@ -156,7 +162,12 @@ export default function ScientificImpact() {
         {/* خدمات الإدارة العامة */}
         <PackageContainer>
           <PackageHeader>
-            <PackagePrice>تواصل معنا</PackagePrice>
+            <Link
+              to="/Professional-Certificates"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <PackagePrice>اكتشف هنا</PackagePrice>
+            </Link>
             <PackageTitle>
               <PackageIcon className="fas fa-tasks mx-3"></PackageIcon>
               خدمات الإدارة العامة
@@ -186,7 +197,12 @@ export default function ScientificImpact() {
         {/* خدمات الموارد البشرية */}
         <PackageContainer>
           <PackageHeader>
-            <PackagePrice>تواصل معنا</PackagePrice>
+            <Link
+              to="/Human-Resources"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <PackagePrice>اكتشف هنا</PackagePrice>
+            </Link>
             <PackageTitle>
               <PackageIcon className="fas fa-users mx-3"></PackageIcon>
               خدمات الموارد البشرية

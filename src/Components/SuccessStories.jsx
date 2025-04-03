@@ -46,7 +46,7 @@ const SectionTitle = styled.h2`
 
 const SliderImage = styled.img`
   width: 100%;
-  height: 300px; /* ارتفاع ثابت للصور */
+  height: 200px; /* ارتفاع ثابت للصور */
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

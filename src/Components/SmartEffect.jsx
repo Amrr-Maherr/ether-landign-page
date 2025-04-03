@@ -29,7 +29,7 @@ const SectionTitle = styled(motion.h2)`
 
 const PackageIcon = styled.i`
   color: #009688;
-  margin-right: 5px; /* تم التعديل إلى اليمين وتقليل الهامش */
+  margin-left: 5px; /* تم التعديل إلى اليمين وتقليل الهامش */
   font-size: 1.2em;
 `;
 
@@ -142,20 +142,20 @@ export default function SmartEffect() {
           </PackageDescription>
           <PackageFeatures>
             <PackageFeatureItem>
-              هوية بصرية
               <PackageIcon className="fas fa-paint-brush" />
+              هوية بصرية
             </PackageFeatureItem>
             <PackageFeatureItem>
-              صفحات السوشيال ميديا
               <PackageIcon className="fas fa-photo-video" />
+              صفحات السوشيال ميديا
             </PackageFeatureItem>
             <PackageFeatureItem>
-              12 تصميم سوشيال ميديا
               <PackageIcon className="fas fa-calendar-alt" />
+              12 تصميم سوشيال ميديا
             </PackageFeatureItem>
             <PackageFeatureItem>
-              تصوير منتجات
               <PackageIcon className="fas fa-camera" />
+              تصوير منتجات
             </PackageFeatureItem>
           </PackageFeatures>
         </PackageContainer>
@@ -174,28 +174,28 @@ export default function SmartEffect() {
           </PackageDescription>
           <PackageFeatures>
             <PackageFeatureItem>
-              كل مزايا الانطلاقة
               <PackageIcon className="fas fa-check-circle" />
+              كل مزايا الانطلاقة
             </PackageFeatureItem>
             <PackageFeatureItem>
-              إدارة التواصل الاجتماعي
               <PackageIcon className="fas fa-comments" />
+              إدارة التواصل الاجتماعي
             </PackageFeatureItem>
             <PackageFeatureItem>
-              16 تصميم سوشيال ميديا
               <PackageIcon className="fas fa-images" />
+              16 تصميم سوشيال ميديا
             </PackageFeatureItem>
             <PackageFeatureItem>
-              فيديو دعائي قصير
               <PackageIcon className="fas fa-video" />
+              فيديو دعائي قصير
             </PackageFeatureItem>
             <PackageFeatureItem>
-              حملة إعلانية ممولة
               <PackageIcon className="fas fa-bullhorn" />
+              حملة إعلانية ممولة
             </PackageFeatureItem>
             <PackageFeatureItem>
-              تقرير شهري
               <PackageIcon className="fas fa-file-alt" />
+              تقرير شهري
             </PackageFeatureItem>
           </PackageFeatures>
         </PackageContainer>
