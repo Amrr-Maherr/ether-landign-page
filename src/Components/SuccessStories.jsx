@@ -5,17 +5,20 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // استيراد الصور
-import partner1 from "../Assets/WhatsApp Image 2025-03-29 at 16.08.55_2700963b.jpg";
-import partner2 from "../Assets/WhatsApp Image 2025-03-29 at 16.08.56_11572024.jpg";
-import partner3 from "../Assets/WhatsApp Image 2025-03-29 at 16.08.56_e7489341.jpg";
-import partner4 from "../Assets/WhatsApp Image 2025-03-29 at 16.08.57_03a7938e.jpg";
-import partner5 from "../Assets/WhatsApp Image 2025-03-29 at 16.08.59_ee45f6ae.jpg";
-import partner6 from "../Assets/WhatsApp Image 2025-03-29 at 16.09.00_c0f67063.jpg";
-import partner7 from "../Assets/WhatsApp Image 2025-03-29 at 16.09.01_d8ef0fe8.jpg";
-import partner8 from "../Assets/WhatsApp Image 2025-03-29 at 16.09.02_6c0be5ef.jpg";
-import partner9 from "../Assets/WhatsApp Image 2025-03-26 at 01.00.31_7e4914b4.jpg";
-import partner10 from "../Assets/microsoft-logo-svgrepo-com.svg";
-import partner11 from "../Assets/adobe-2.svg";
+import partner1 from "../Assets/WhatsApp Image 2025-04-04 at 16.58.30_986712a4.jpg";
+import partner2 from "../Assets/WhatsApp Image 2025-04-04 at 16.58.44_c02f31b6.jpg";
+import partner3 from "../Assets/WhatsApp Image 2025-04-04 at 16.58.50_759d7bc4.jpg";
+import partner4 from "../Assets/WhatsApp Image 2025-04-04 at 16.58.58_b1f0be02.jpg";
+import partner5 from "../Assets/WhatsApp Image 2025-04-04 at 16.59.04_08d115f0.jpg";
+import partner6 from "../Assets/WhatsApp Image 2025-04-04 at 16.59.17_96d3e4eb.jpg";
+import partner7 from "../Assets/WhatsApp Image 2025-04-04 at 16.59.24_4422f840.jpg";
+import partner8 from "../Assets/WhatsApp Image 2025-04-04 at 16.59.29_0e2ca2c8.jpg";
+import partner9 from "../Assets/imges.jpg";
+import partner10 from "../Assets/WhatsApp Image 2025-04-04 at 16.59.43_2eeba6c1.jpg";
+import partner11 from "../Assets/WhatsApp Image 2025-04-04 at 16.59.55_604f14b5.jpg";
+import partner12 from "../Assets/WhatsApp Image 2025-04-04 at 17.00.49_b24146c7.jpg";
+import partner13 from "../Assets/WhatsApp Image 2025-04-04 at 17.01.10_1680f379.jpg";
+import partner14 from "../Assets/WhatsApp Image 2025-04-04 at 17.01.25_c26576d8.jpg";
 
 // Styled Components
 const SimpleSliderContainer = styled.div`
@@ -110,6 +113,9 @@ function SimpleSlider() {
     partner9,
     partner10,
     partner11,
+    partner12,
+    partner13,
+    partner14,
   ];
 
   return (
