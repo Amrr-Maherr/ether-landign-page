@@ -11,14 +11,14 @@ import partner3 from "../Assets/WhatsApp Image 2025-04-04 at 16.58.50_759d7bc4.j
 import partner4 from "../Assets/WhatsApp Image 2025-04-04 at 16.58.58_b1f0be02.jpg";
 import partner5 from "../Assets/WhatsApp Image 2025-04-04 at 16.59.04_08d115f0.jpg";
 import partner6 from "../Assets/WhatsApp Image 2025-04-04 at 16.59.17_96d3e4eb.jpg";
-import partner7 from "../Assets/WhatsApp Image 2025-04-04 at 16.59.24_4422f840.jpg";
+import partner7 from "../Assets/four.jpg";
 import partner8 from "../Assets/WhatsApp Image 2025-04-04 at 16.59.29_0e2ca2c8.jpg";
 import partner9 from "../Assets/imges.jpg";
-import partner10 from "../Assets/WhatsApp Image 2025-04-04 at 16.59.43_2eeba6c1.jpg";
-import partner11 from "../Assets/WhatsApp Image 2025-04-04 at 16.59.55_604f14b5.jpg";
+import partner10 from "../Assets/three.jpg";
+import partner11 from "../Assets/two.jpg";
 import partner12 from "../Assets/WhatsApp Image 2025-04-04 at 17.00.49_b24146c7.jpg";
-import partner13 from "../Assets/WhatsApp Image 2025-04-04 at 17.01.10_1680f379.jpg";
-import partner14 from "../Assets/WhatsApp Image 2025-04-04 at 17.01.25_c26576d8.jpg";
+import partner13 from "../Assets/one.jpg";
+import partner14 from "../Assets/five.jpg";
 
 // Styled Components
 const SimpleSliderContainer = styled.div`
@@ -56,7 +56,6 @@ const SliderImage = styled.img`
   display: block; /* يمنع وجود مسافات إضافية أسفل الصورة */
   margin: 0 auto; /* لتوسيط الصورة إذا كانت أضيق من الحاوية */
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   vertical-align: middle; /* لتحسين المحاذاة العمودية داخل السلايدر */
 
