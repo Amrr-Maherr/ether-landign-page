@@ -141,7 +141,7 @@ export default function ScientificImpact() {
           <PackageDescription>
             نقدم خدمات متخصصة في مجال الصحة والسلامة المهنية لضمان بيئة عمل آمنة
             وصحية، وتشمل تقييم المخاطر، وتطوير السياسات والإجراءات، وتنفيذ برامج
-            التدريب.
+            التدريب
           </PackageDescription>
           <PackageFeatures>
             <PackageFeatureItem>
@@ -176,7 +176,7 @@ export default function ScientificImpact() {
           <PackageDescription>
             نقدم حلولًا شاملة في مجال الإدارة العامة، بما في ذلك التخطيط
             الاستراتيجي، وإدارة المشاريع، وتحسين العمليات الإدارية، بهدف تحقيق
-            الكفاءة والفعالية في الأداء.
+            الكفاءة والفعالية في الأداء
           </PackageDescription>
           <PackageFeatures>
             <PackageFeatureItem>
@@ -211,7 +211,7 @@ export default function ScientificImpact() {
           <PackageDescription>
             نوفر خدمات متكاملة في مجال الموارد البشرية، تشمل التوظيف، والتدريب
             والتطوير، وإدارة الأداء، بهدف بناء فريق عمل مؤهل ومتكامل يساهم في
-            تحقيق أهداف المنظمة.
+            تحقيق أهداف المنظمة
           </PackageDescription>
           <PackageFeatures>
             <PackageFeatureItem>

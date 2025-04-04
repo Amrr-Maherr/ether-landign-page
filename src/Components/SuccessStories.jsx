@@ -20,7 +20,6 @@ import partner11 from "../Assets/adobe-2.svg";
 // Styled Components
 const SimpleSliderContainer = styled.div`
   padding: 30px;
-  background-color: #f0f0f0;
   overflow: hidden;
 `;
 
