@@ -14,9 +14,7 @@ import partner6 from "../Assets/WhatsApp Image 2025-04-04 at 16.59.17_96d3e4eb.j
 import partner7 from "../Assets/four.jpg";
 import partner8 from "../Assets/WhatsApp Image 2025-04-04 at 16.59.29_0e2ca2c8.jpg";
 import partner9 from "../Assets/imges.jpg";
-import partner10 from "../Assets/three.jpg";
 import partner11 from "../Assets/two.jpg";
-import partner12 from "../Assets/WhatsApp Image 2025-04-04 at 17.00.49_b24146c7.jpg";
 import partner13 from "../Assets/one.jpg";
 import partner14 from "../Assets/five.jpg";
 
@@ -110,9 +108,7 @@ function SimpleSlider() {
     partner7,
     partner8,
     partner9,
-    partner10,
     partner11,
-    partner12,
     partner13,
     partner14,
   ];
