@@ -65,7 +65,7 @@ const NavList = styled(motion.ul)`
 
   @media (max-width: 991.98px) {
     /* استخدام نفس نقطة الفصل الخاصة بـ lg في Bootstrap */
-    flex-direction: column; /* ترتيب العناصر عمودياً على الشاشات الصغيرة */
+    flex-direction: column-reverse;
     /* margin-left: 0; تم التعامل مع المحاذاة في NavCollapseDiv */
     width: auto; /* اسمح للقائمة بأخذ عرض محتواها فقط */
     align-items: flex-end; /* محاذاة النصوص داخل العناصر لليمين */
